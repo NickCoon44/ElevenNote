@@ -13,7 +13,7 @@ namespace ElevenNote.Data
         [Key]
         public int NoteId { get; set; }
         [ForeignKey("Category")]
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
         public virtual Category Category { get; set; }
         [Required]
         public Guid OwnerId { get; set; }

@@ -39,7 +39,7 @@ namespace ElevenNote.Services
             }
         }
 
-        public CategoryDetail GetCategoryById(int id)
+        public Category GetCategoryById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -47,7 +47,7 @@ namespace ElevenNote.Services
                     .Categories
                     .Single(e => e.CategoryId == id);
                 return
-                    new CategoryDetail
+                    new Category
                     {
                         CategoryId = entity.CategoryId,
                         Name = entity.Name,
@@ -55,7 +55,7 @@ namespace ElevenNote.Services
             }
         }
 
-        public bool UpdateCategory(CategoryEdit model)
+        public bool UpdateCategory(Category model)
         {
             using (var ctx = new ApplicationDbContext())
             {

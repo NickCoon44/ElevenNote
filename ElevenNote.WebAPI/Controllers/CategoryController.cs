@@ -1,4 +1,5 @@
-﻿using ElevenNote.Models;
+﻿using ElevenNote.Data;
+using ElevenNote.Models;
 using ElevenNote.Services;
 using System;
 using System.Collections.Generic;
@@ -41,7 +42,7 @@ namespace ElevenNote.WebAPI.Controllers
             return Ok(category);
         }
 
-        public IHttpActionResult Put(CategoryEdit category)
+        public IHttpActionResult Put(Category category)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

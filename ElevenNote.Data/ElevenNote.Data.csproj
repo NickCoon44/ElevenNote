@@ -90,13 +90,9 @@
     <Compile Include="Migrations\202008291959203_InitialCreate.Designer.cs">
       <DependentUpon>202008291959203_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202008292321378_Initial.cs" />
-    <Compile Include="Migrations\202008292321378_Initial.Designer.cs">
-      <DependentUpon>202008292321378_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008300014313_CategoryImplemented.cs" />
-    <Compile Include="Migrations\202008300014313_CategoryImplemented.Designer.cs">
-      <DependentUpon>202008300014313_CategoryImplemented.cs</DependentUpon>
+    <Compile Include="Migrations\202008310707514_CategoryImplement.cs" />
+    <Compile Include="Migrations\202008310707514_CategoryImplement.Designer.cs">
+      <DependentUpon>202008310707514_CategoryImplement.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
@@ -110,11 +106,8 @@
     <EmbeddedResource Include="Migrations\202008291959203_InitialCreate.resx">
       <DependentUpon>202008291959203_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008292321378_Initial.resx">
-      <DependentUpon>202008292321378_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008300014313_CategoryImplemented.resx">
-      <DependentUpon>202008300014313_CategoryImplemented.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202008310707514_CategoryImplement.resx">
+      <DependentUpon>202008310707514_CategoryImplement.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
