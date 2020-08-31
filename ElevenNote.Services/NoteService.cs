@@ -22,6 +22,7 @@ namespace ElevenNote.Services
             var entity = new Note()
             {
                 OwnerId = _userId,
+                CategoryId = model.CategoryId,
                 Title = model.Title,
                 Content = model.Content,
                 CreatedUtc = DateTimeOffset.Now
@@ -44,6 +45,7 @@ namespace ElevenNote.Services
                     {
                         NoteId = e.NoteId,
                         Title = e.Title,
+                        CategoryId = e.CategoryId,
                         CreatedUtc = e.CreatedUtc
                     }
                     );
@@ -64,8 +66,10 @@ namespace ElevenNote.Services
                         NoteId = entity.NoteId,
                         Title = entity.Title,
                         Content = entity.Content,
+                        CategoryId = entity.CategoryId,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
+                        
                     };
             }
         }
@@ -81,6 +85,7 @@ namespace ElevenNote.Services
 
                 entity.Title = model.Title;
                 entity.Content = model.Content;
+                entity.CategoryId = model.CategoryId;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;
